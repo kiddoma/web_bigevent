@@ -56,7 +56,7 @@ $(function() {
         e.preventDefault();
         $.ajax({
             url: '/api/login',
-            method: 'post',
+            method: 'POST',
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
